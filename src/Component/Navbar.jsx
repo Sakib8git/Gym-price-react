@@ -1,17 +1,30 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import NavLink from "./NavLink";
+import { CircleChevronDown, Menu } from "lucide-react";
 
 const Navbar = ({ navPromise }) => {
   const navData = use(navPromise);
-  //   console.log(navData);
+  const [openMenu, setOpenMenu] = useState(true);
+  const links = navData.map((route) => (
+    <NavLink key={route.id} route={route}></NavLink>
+  ));
+
   return (
-    <nav className=" navbar flex justify-between items-center container mx-auto">
-      <h1 className="font-bold text-2xl">My Gym</h1>
-      <ul className="flex gap-5">
-        {navData.map((route) => (
-          <NavLink key={route.id} route={route}></NavLink>
-        ))}
-      </ul>
+    <nav className=" navbar flex justify-between items-center container mx-auto p-4">
+      <span className="flex items-center gap-2">
+        <span onClick={() => setOpenMenu(!openMenu)}>
+          {openMenu ? (
+            <CircleChevronDown className="md:hidden" />
+          ) : (
+            <Menu className="md:hidden"></Menu>
+          )}
+        </span>
+        {/* small device */}
+        <ul className="md:hidden" >{links}</ul>
+        <h1 className="font-bold text-2xl">My Gym</h1>
+      </span>
+      <ul className="md:flex gap-5 hidden">{links}</ul>
+      <button className="btn">Sign In</button>
     </nav>
   );
 };
