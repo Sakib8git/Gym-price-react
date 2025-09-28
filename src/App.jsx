@@ -4,6 +4,7 @@ import Navbar from "./Component/navbar";
 import PricingCon from "./Component/PricingCon";
 
 import DNASpiner from "./Component/DNASpiner";
+import Rechrt from "./Component/Rechrt";
 
 function App() {
   const navPromise = fetch("./Nav.json").then((res) => res.json());
@@ -17,11 +18,12 @@ function App() {
           <Navbar navPromise={navPromise}></Navbar>
         </Suspense>
       </header>
-      <body className="bg-cyan-100-400 p-10">
+      <main className="bg-cyan-100 p-10 ">
         <Suspense fallback={<DNASpiner></DNASpiner>}>
           <PricingCon pricingPromise={pricingPromise}></PricingCon>
         </Suspense>
-      </body>
+        <Rechrt></Rechrt>
+      </main>
     </>
   );
 }
