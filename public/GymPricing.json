@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "planName": "Monthly",
+    "priceBDT": 1500,
+    "duration": "1 Month",
+    "features": [
+      "Full gym access",
+      "Locker",
+      "Free water",
+      "Evening slot access",
+      "Basic progress tracking",
+      "1 guest pass"
+    ],
+    "recommended": false
+  },
+  {
+    "id": 2,
+    "planName": "Quarterly Pro",
+    "priceBDT": 4000,
+    "duration": "3 Months",
+    "features": [
+      "Gym + group classes",
+      "Diet chart",
+      "Locker",
+      "Body composition analysis",
+      "Online workout portal",
+      "Steam room access",
+      "2 guest passes"
+    ],
+    "recommended": true
+  },
+  {
+    "id": 3,
+    "planName": "Yearly Elite",
+    "priceBDT": 14000,
+    "duration": "12 Months",
+    "features": [
+      "Unlimited trainer access",
+      "Nutritionist support",
+      "Merch pack",
+      "Priority booking",
+      "Recovery zone access",
+      "Challenge entry",
+      "Progress dashboard",
+      "Monthly health check",
+      "5 guest passes"
+    ],
+    "recommended": false
+  }
+]

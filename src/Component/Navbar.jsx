@@ -19,8 +19,9 @@ const Navbar = ({ navPromise }) => {
             <Menu className="md:hidden"></Menu>
           )}
         </span>
-        {/* small device */}
-        <ul className="md:hidden" >{links}</ul>
+        {/* //!small device */}
+        <ul className={`md:hidden absolute bg-amber-300 md:p-3 duration-1000  rounded-xl
+           ${openMenu? "top-14 left-3": "-top-64 left-3"} ` }>{links}</ul>
         <h1 className="font-bold text-2xl">My Gym</h1>
       </span>
       <ul className="md:flex gap-5 hidden">{links}</ul>
