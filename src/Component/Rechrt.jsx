@@ -66,8 +66,8 @@ const personDataExer = [
 
 const Rechrt = () => {
   return (
-    <div className="bg-white container mx-auto">
-      <LineChart width={1000} height={300} data={personDataExer}>
+    <div className=" ">
+      <LineChart className="container mx-auto bg-amber-100 p-2 border-0 rounded-xl shadow-md" width={450} height={300} data={personDataExer}>
         <XAxis dataKey={"name"}></XAxis>
         <YAxis></YAxis>
         <Line dataKey="bmi" stroke="red"></Line>
