@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "label": "Home",
+    "url": "/",
+    "icon": "home"
+  },
+  {
+    "id": 2,
+    "label": "Services",
+    "url": "/services",
+    "icon": "briefcase"
+  },
+  {
+    "id": 3,
+    "label": "About Us",
+    "url": "/about",
+    "icon": "info-circle"
+  },
+  {
+    "id": 4,
+    "label": "Contact",
+    "url": "/contact",
+    "icon": "phone"
+  },
+  {
+    "id": 5,
+    "label": "Dashboard",
+    "url": "/dashboard",
+    "icon": "chart-bar"
+  }
+]
